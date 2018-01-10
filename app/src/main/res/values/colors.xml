@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="primary_color">#000000</color>
+    <color name="primary_dark_color">#9e9e9e</color>
+    <color name="now_playing">#d4e157</color>
+    <color name="downloaded_songs">#ff7043</color>
+    <color name="song_purchase">#bdbdbd</color>
+</resources>

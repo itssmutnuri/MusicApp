@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.android.musicapp.MainActivity">
+
+    <!-- Now Playing -->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/now_playing">
+        <TextView
+            android:id="@+id/nowPlaying"
+            style="@style/CategoryStyle"
+            android:background="?android:attr/selectableItemBackground"
+            android:text="@string/now_playing" />
+    </FrameLayout>
+
+    <!-- Song List -->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/downloaded_songs">
+        <TextView
+            android:id="@+id/songList"
+            style="@style/CategoryStyle"
+            android:background="?android:attr/selectableItemBackground"
+            android:text="@string/downloaded_songs" />
+    </FrameLayout>
+
+    <!-- Store activity -->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/song_purchase">
+        <TextView
+            android:id="@+id/purchaseContent"
+            style="@style/CategoryStyle"
+            android:background="?android:attr/selectableItemBackground"
+            android:text="@string/song_purchase" />
+    </FrameLayout>
+</LinearLayout>
