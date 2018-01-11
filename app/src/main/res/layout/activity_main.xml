@@ -6,6 +6,32 @@
     android:orientation="vertical"
     tools:context="com.example.android.musicapp.MainActivity">
 
+    <TextView
+        android:id="@+id/mainActivityTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:gravity="center"
+        android:layout_weight="0"
+        android:fontFamily="serif"
+        android:padding="10sp"
+        android:text="Central Screen"
+        android:textAlignment="center"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/mainActivityDescription"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textColor="#000000"
+        android:gravity="center"
+        android:layout_weight="1"
+        android:fontFamily="serif"
+        android:padding="10sp"
+        android:text="@string/main_screen"
+        android:textAlignment="center"
+        android:textSize="20sp" />
+
     <!-- Now Playing -->
     <FrameLayout
         android:layout_width="match_parent"
@@ -41,4 +67,6 @@
             android:background="?android:attr/selectableItemBackground"
             android:text="@string/song_purchase" />
     </FrameLayout>
+
+
 </LinearLayout>

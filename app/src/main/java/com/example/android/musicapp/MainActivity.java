@@ -31,7 +31,6 @@ public class MainActivity extends AppCompatActivity {
         TextView songs = (TextView) findViewById(R.id.songList);
         // Set a click listener on that View
         songs.setOnClickListener(new View.OnClickListener() {
-            // The code in this method will be executed when the offline songs View is clicked on.
             @Override
             public void onClick(View view) {
                 Intent offlineSongs = new Intent(MainActivity.this, OfflineSongListActivity.class);
@@ -42,7 +41,6 @@ public class MainActivity extends AppCompatActivity {
         TextView buySongs = (TextView) findViewById(R.id.purchaseContent);
         // Set a click listener on that View
         buySongs.setOnClickListener(new View.OnClickListener() {
-            // The code in this method will be executed when the numbers View is clicked on.
             @Override
             public void onClick(View view) {
                 Intent storePurchase = new Intent(MainActivity.this, StoreActivity.class);

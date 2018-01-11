@@ -1,17 +1,10 @@
 package com.example.android.musicapp;
 
-import android.content.Context;
 import android.content.Intent;
-import android.media.AudioManager;
-import android.media.MediaPlayer;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.AdapterView;
-import android.widget.ListView;
 import android.widget.TextView;
-
-import java.util.ArrayList;
 
 public class OfflineSongListActivity extends AppCompatActivity {
 
@@ -24,11 +17,21 @@ public class OfflineSongListActivity extends AppCompatActivity {
 
         // Set a click listener on that View
         nowPlayingContent.setOnClickListener(new View.OnClickListener() {
-            // The code in this method will be executed when the numbers View is clicked on.
             @Override
             public void onClick(View view) {
                 Intent playing = new Intent(OfflineSongListActivity.this, NowPlayingActivity.class);
                 startActivity(playing);
+            }
+        });
+
+        TextView store = (TextView) findViewById(R.id.musicStoreButton);
+
+        // Set a click listener on that View
+        store.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent storeButton = new Intent(OfflineSongListActivity.this, StoreActivity.class);
+                startActivity(storeButton);
             }
         });
     }

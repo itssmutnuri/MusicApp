@@ -4,10 +4,12 @@
     <string name="now_playing">Now Playing</string>
     <string name="downloaded_songs">Song List</string>
     <string name="purchase_song">Make Payment</string>
-    <string name="now_playing_screen">Currently playing song.</string>
+    <string name="main_screen">This view would enable the navigation into other screens. Tap the buttons below to navigate.</string>
+    <string name="now_playing_screen">This view would display the song currently being played.</string>
     <string name="library_screen">This view contains the library of songs held by the user\'s phone</string>
-    <string name="store_screen">This view contains various items available for purchase from the store</string>
+    <string name="store_screen">This view contains various items available for purchase from the store. Once the user selects the content, they can move on to the payment gateway, where the purchase can be made.</string>
     <string name="purchase_screen">This view is the payment gateway. \nPayPal is considered for use here. Ideally, steps from <a href="https://developer.paypal.com/docs/integration/paypal-here/android-dev/sample-apps/">this</a> broad link can be followed to achieve this. </string>
     <string name="play_button">Now Playing</string>
     <string name="purchase_button">Purchase</string>
+    <string name="offline_songs">Your Library</string>
 </resources>
